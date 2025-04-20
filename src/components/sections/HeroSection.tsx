@@ -1,25 +1,7 @@
-import { ChevronDown, CalendarDays, MapPin } from "lucide-react";
+import { ChevronDown, CalendarDays, MapPin, Clock, AlertCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 export function HeroSection() {
-  const organizers = [
-    {
-      name: "GDG HITAM",
-      logo: "https://placehold.co/200x80/8B5CF6/FFFFFF/svg+xml?text=GDG+HITAM",
-      delay: 0,
-    },
-    {
-      name: "IUCEE HITAM",
-      logo: "https://placehold.co/200x80/3B82F6/FFFFFF/svg+xml?text=IUCEE+HITAM",
-      delay: 0.1,
-    },
-    {
-      name: "HHC HITAM",
-      logo: "https://placehold.co/200x80/EC4899/FFFFFF/svg+xml?text=HHC+HITAM",
-      delay: 0.2,
-    },
-  ];
-
   return (
     <section id="home" className="relative pt-32 pb-24 md:pb-32 md:pt-44 overflow-hidden">
       {/* Background Elements */}
@@ -29,12 +11,23 @@ export function HeroSection() {
       {/* Content */}
       <div className="container relative z-10">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto space-y-8">
-          <div className="inline-flex items-center px-3 py-1 rounded-full border border-hackathon-purple/30 bg-hackathon-purple/10 text-hackathon-purple text-sm font-medium animate-fade-down">
-            <CalendarDays className="w-4 h-4 mr-2" />
-            <span>May 9th & 10th, 2025</span>
-            <span className="mx-2 text-white/30">|</span>
-            <MapPin className="w-4 h-4 mr-2" />
-            <span>Activity Block, HITAM</span>
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center">
+            <div className="inline-flex items-center px-3 py-1 rounded-full border border-hackathon-purple/30 bg-hackathon-purple/10 text-hackathon-purple text-sm font-medium animate-fade-down">
+              <CalendarDays className="w-4 h-4 mr-2" />
+              <span>May 9-10, 2025</span>
+            </div>
+            <div className="inline-flex items-center px-3 py-1 rounded-full border border-hackathon-blue/30 bg-hackathon-blue/10 text-hackathon-blue text-sm font-medium animate-fade-down">
+              <Clock className="w-4 h-4 mr-2" />
+              <span>24 Hours</span>
+            </div>
+            <div className="inline-flex items-center px-3 py-1 rounded-full border border-hackathon-green/30 bg-hackathon-green/10 text-hackathon-green text-sm font-medium animate-fade-down">
+              <MapPin className="w-4 h-4 mr-2" />
+              <span>HITAM Campus</span>
+            </div>
+            <div className="inline-flex items-center px-3 py-1 rounded-full border border-hackathon-yellow/30 bg-hackathon-yellow/10 text-hackathon-yellow text-sm font-medium animate-fade-down">
+              <AlertCircle className="w-4 h-4 mr-2" />
+              <span>Register by May 3rd</span>
+            </div>
           </div>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold gradient-heading glow animate-fade-down animation-delay-100">
@@ -42,7 +35,7 @@ export function HeroSection() {
           </h1>
           
           <p className="text-xl md:text-2xl text-white/80 max-w-3xl animate-fade-down animation-delay-200">
-            Join us for 36 hours of innovation, creativity, and coding excellence! 🚀
+            If you have the KNACK to HACK and make it top of the PACK!
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mt-8 animate-fade-up">
@@ -55,37 +48,24 @@ export function HeroSection() {
             </a>
           </div>
           
-          {/* Organizers Section */}
+          {/* Organizers */}
           <div className="mt-16 w-full">
-            <motion.h3 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="text-center text-white/70 mb-8 text-sm uppercase tracking-wider"
-            >
-              Proudly Organized By
-            </motion.h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-              {organizers.map((org, index) => (
-                <motion.div
-                  key={org.name}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: org.delay }}
-                  className="glass p-4 rounded-xl hover:bg-white/5 transition-colors"
-                >
-                  <div className="relative group">
-                    <div className="absolute -inset-0.5 bg-gradient-to-r from-hackathon-purple to-hackathon-pink rounded-lg opacity-30 group-hover:opacity-100 transition-opacity blur"></div>
-                    <div className="relative bg-background rounded-lg p-4 flex items-center justify-center">
-                      <img 
-                        src={org.logo} 
-                        alt={org.name}
-                        className="max-w-full h-auto"
-                      />
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
+            <div className="flex flex-col items-center gap-4">
+              <h3 className="text-center text-white/70 text-sm uppercase tracking-wider font-medium">
+                 Organized By
+              </h3>
+              <div className="flex items-center gap-4 glass rounded-xl p-6">
+                <img 
+                  src="/images/logos/hhclogo.png" 
+                  alt="HITAM Hackathon Club" 
+                  className="h-16 w-auto object-contain"
+                />
+                <div className="h-12 w-px bg-white/10"></div>
+                <div className="text-left">
+                  <h4 className="text-white font-semibold">HITAM Hackathon Club</h4>
+                  <p className="text-white/70 text-sm">Fostering Innovation Through Code</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

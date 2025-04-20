@@ -5,7 +5,7 @@ export function PrizesSection() {
   const prizes = [
     {
       position: "1",
-      title: "First Prize",
+      title: "20,000/-",
       description: "The winning team will receive a substantial cash prize and recognition.",
       icon: <Trophy className="w-8 h-8 text-hackathon-yellow" />,
       color: "from-yellow-500 to-orange-500",
@@ -13,7 +13,7 @@ export function PrizesSection() {
     },
     {
       position: "2",
-      title: "Second Prize",
+      title: "10,000/-",
       description: "Runner-up teams will be awarded with exciting cash prizes.",
       icon: <Award className="w-8 h-8 text-hackathon-purple" />,
       color: "from-purple-500 to-pink-500",
@@ -21,7 +21,7 @@ export function PrizesSection() {
     },
     {
       position: "3",
-      title: "Third Prize",
+      title: "5,000/-",
       description: "Third place teams will receive special recognition and prizes.",
       icon: <Gift className="w-8 h-8 text-hackathon-blue" />,
       color: "from-blue-500 to-cyan-500",

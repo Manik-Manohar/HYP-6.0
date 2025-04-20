@@ -76,7 +76,10 @@ export function Footer() {
                     <circle cx="12" cy="10" r="3" />
                   </svg>
                 </div>
-                <span>Tech Building, Innovation Campus, New York</span>
+                <span>HITAM (Hyderabad Institute of Technology and Management)</span>
+              </li>
+              <li>
+              <span>Made with ❤️ by Mahesh Pandey</span>
               </li>
             </ul>
           </div>

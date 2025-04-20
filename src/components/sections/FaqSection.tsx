@@ -63,9 +63,14 @@ export function FaqSection() {
         "The registration fee varies: For HITAM students, it's ₹600 per team. For students from other colleges, it's ₹1000 per team.",
     },
     {
+      question: "When is the registration deadline?",
+      answer:
+        "Registration closes on May 1st, 2025. Make sure to complete your registration before this date to secure your spot.",
+    },
+    {
       question: "How do I register for the hackathon?",
       answer:
-        "Registration is done through Devpost. Scan the QR code on our website to access the registration page.",
+        "Registration is done through Unstop. Scan the QR code on our website to access the registration page.",
     },
     {
       question: "Where will the hackathon be held?",
@@ -80,51 +85,66 @@ export function FaqSection() {
   ];
 
   return (
-    <section id="faq" className="py-20 md:py-32 relative overflow-hidden bg-gradient-to-b from-hackathon-purple/5 to-background">
+    <section id="faq" className="py-24 md:py-36 relative overflow-hidden bg-gradient-to-b from-hackathon-purple/5 to-background">
       <div className="absolute inset-0 bg-[url(/images/bg-pattern.svg)] bg-no-repeat bg-cover opacity-10"></div>
       
       <div className="container relative">
-        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center px-4 py-1 rounded-full border border-hackathon-pink/30 bg-hackathon-pink/10 text-hackathon-pink text-sm font-medium mb-6">
-            Got Questions?
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-heading">
+        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-20">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="inline-flex items-center px-4 py-1 rounded-full border border-hackathon-cyan/30 bg-hackathon-cyan/10 text-hackathon-cyan text-sm font-medium mb-6"
+          >
             Frequently Asked Questions
-          </h2>
-          <p className="text-white/70 text-lg">
-            Find answers to common questions about Hack Your Path 6.0. Can't find what you're looking for? Feel free to contact us.
-          </p>
+          </motion.div>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="text-4xl md:text-5xl font-bold mb-8 gradient-heading"
+          >
+            Got Questions?
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-white/80 text-lg md:text-xl leading-relaxed"
+          >
+            Find answers to common questions about Hack Your Path 6.0. Registration closes on May 1st, 2025.
+          </motion.p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
-          <div className="space-y-4">
-            {faqs.map((faq, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+        <div className="max-w-3xl mx-auto space-y-4">
+          {faqs.map((faq, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="glass rounded-xl overflow-hidden"
+            >
+              <button
+                onClick={() => setOpenIndex(index)}
+                className="w-full p-6 flex items-center justify-between text-left hover:bg-white/5 transition-colors"
               >
-                <button
-                  onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
-                  className="w-full text-left glass p-6 rounded-xl"
-                >
-                  <div className="flex justify-between items-center">
-                    <h3 className="text-lg font-medium text-white">{faq.question}</h3>
-                    <ChevronDown
-                      className={`w-5 h-5 text-white/70 transition-transform ${
-                        openIndex === index ? "rotate-180" : ""
-                      }`}
-                    />
-                  </div>
-                  {openIndex === index && (
-                    <p className="mt-4 text-white/70">{faq.answer}</p>
-                  )}
-                </button>
-              </motion.div>
-            ))}
-          </div>
+                <h3 className="text-lg font-semibold text-white">{faq.question}</h3>
+                <ChevronDown
+                  className={`w-5 h-5 text-white/70 transition-transform ${
+                    openIndex === index ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+              {openIndex === index && (
+                <div className="p-6 pt-0 text-white/70">{faq.answer}</div>
+              )}
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

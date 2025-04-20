@@ -1,4 +1,3 @@
-
 import { Code2, Sparkles, Users, Trophy, EyeIcon, LightbulbIcon, Rocket, BrainCircuitIcon } from "lucide-react";
 
 export function AboutSection() {
@@ -25,7 +24,7 @@ export function AboutSection() {
       icon: <Trophy className="w-5 h-5 text-hackathon-yellow" />,
       title: "Win Prizes",
       description:
-        "Compete for exciting prizes and recognition for your innovations.",
+        "Compete for exciting prizes worth ₹35,000/- and recognition.",
     },
   ];
 
@@ -37,13 +36,13 @@ export function AboutSection() {
       <div className="container relative">
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center px-4 py-1 rounded-full border border-hackathon-purple/30 bg-hackathon-purple/10 text-hackathon-purple text-sm font-medium mb-6">
-            About Hack Your Path 6.0
+            About The Event
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-heading">
             The Ultimate Coding Experience
           </h2>
           <p className="text-white/70 text-lg">
-          Hack Your Path 6.0 is a 48-hour hackathon where creativity meets technology. Join us for a weekend of innovation, collaboration, and learning as you build solutions to real-world problems.
+            Hack Your Path 6.0 is organized by HITAM Hackathon Club (HHC) in collaboration with GDG HITAM and IUCEE HITAM. Join us for an exciting hackathon where innovation meets technology!
           </p>
         </div>
 
@@ -62,35 +61,19 @@ export function AboutSection() {
           ))}
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mt-20">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="inline-flex items-center px-4 py-1 rounded-full border border-hackathon-cyan/30 bg-hackathon-cyan/10 text-hackathon-cyan text-sm font-medium">
               Who Can Participate?
             </div>
             <h2 className="text-3xl md:text-4xl font-bold gradient-heading">
-              Open to All Tech Enthusiasts
+              Open to All College Students
             </h2>
             <p className="text-white/70 text-lg">
-              Whether you're a coding ninja, a design guru, or a creative thinker, 
-              Hack Your Path 6.0 welcomes participants from all backgrounds and skill levels.
-              Form teams of up to 4 members and build something amazing together!
+              Whether you're a coding enthusiast, a problem solver, or an innovator, 
+              Hack Your Path 6.0 welcomes all college students. Form a team of up to 4 members 
+              from your college and showcase your skills!
             </p>
-            
-            <ul className="space-y-3 mt-6">
-              {[
-                { icon: <BrainCircuitIcon className="w-5 h-5" />, text: "Students from any university or college" },
-                { icon: <LightbulbIcon className="w-5 h-5" />, text: "Self-taught developers and designers" },
-                { icon: <EyeIcon className="w-5 h-5" />, text: "Industry professionals seeking new challenges" },
-                { icon: <Rocket className="w-5 h-5" />, text: "First-time hackers looking to learn" },
-              ].map((item, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <div className="mt-0.5 flex-shrink-0 h-6 w-6 rounded-full bg-hackathon-blue/20 flex items-center justify-center">
-                    {item.icon}
-                  </div>
-                  <span className="text-white/80">{item.text}</span>
-                </li>
-              ))}
-            </ul>
             
             <div className="pt-4">
               <a href="#register" className="button-gradient">
@@ -101,9 +84,9 @@ export function AboutSection() {
           
           <div className="relative">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-hackathon-purple to-hackathon-pink rounded-xl opacity-30 blur-xl"></div>
-            <div className="relative glass rounded-xl p-6 space-y-6">
-              <div className="flex items-center justify-between">
-                <h3 className="text-xl font-semibold text-white">Why Participate?</h3>
+            <div className="relative glass rounded-xl p-6">
+              <div className="flex items-center justify-between mb-6">
+                <h3 className="text-xl font-semibold text-white">Event Highlights</h3>
                 <div className="h-8 w-8 rounded-full bg-hackathon-purple/20 flex items-center justify-center">
                   <Sparkles className="w-4 h-4 text-hackathon-purple" />
                 </div>
@@ -111,12 +94,12 @@ export function AboutSection() {
               
               <ul className="space-y-4">
                 {[
-                  "Gain hands-on experience with cutting-edge technologies",
-                  "Network with industry professionals and recruiters",
-                  "Win exciting prizes worth up to $10,000",
-                  "Build your portfolio with innovative projects",
-                  "Learn from expert mentors and workshops",
-                  "Free food, swag, and a fun-filled weekend!"
+                  "24-hour intense hackathon experience",
+                  "Prize pool worth ₹50,000/-",
+                  "Expert mentorship and guidance",
+                  "Networking opportunities",
+                  "Certificates for all participants",
+                  "Exciting swag and goodies"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <div className="mt-0.5 flex-shrink-0 h-5 w-5 rounded-full bg-gradient-to-r from-hackathon-purple to-hackathon-pink flex items-center justify-center">

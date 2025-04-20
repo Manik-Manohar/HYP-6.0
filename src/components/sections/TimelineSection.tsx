@@ -1,68 +1,92 @@
-
-import { CalendarClock, Clock } from "lucide-react";
+import { CalendarClock, Clock, Utensils, Coffee } from "lucide-react";
 import { motion } from "framer-motion";
 
 export function TimelineSection() {
   const timelineEvents = [
     {
-      date: "May 20 • 9:00 AM",
-      title: "Opening Ceremony",
-      description: "Welcome address, introduction to the hackathon, and keynote speeches.",
+      date: "May 9 • 9:00 AM",
+      title: "Registration Opens",
+      description: "On-site registration begins. Bring your college ID cards for verification.",
       icon: <CalendarClock className="w-4 h-4" />,
     },
     {
-      date: "May 20 • 11:00 AM",
-      title: "Team Formation & Ideation",
-      description: "Form your teams and start brainstorming your project ideas.",
+      date: "May 9 • 10:00 AM",
+      title: "Hackathon Begins",
+      description: "Opening ceremony, team introductions, and start of the 24-hour coding journey.",
       icon: <CalendarClock className="w-4 h-4" />,
     },
     {
-      date: "May 20 • 2:00 PM",
-      title: "Hacking Begins",
-      description: "Start building your projects with the help of mentors and workshops.",
-      icon: <CalendarClock className="w-4 h-4" />,
+      date: "May 9 • 8:00 PM",
+      title: "Dinner",
+      description: "Complimentary dinner will be provided to all participants.",
+      icon: <Utensils className="w-4 h-4" />,
     },
     {
-      date: "May 21 • All Day",
-      title: "Development & Workshops",
-      description: "Continue working on your projects. Attend workshops and mentorship sessions.",
-      icon: <CalendarClock className="w-4 h-4" />,
+      date: "May 9 • Throughout Day",
+      title: "Development & Mentoring",
+      description: "Teams work on their projects with support from mentors. Tea and snacks will be available at regular intervals.",
+      icon: <Coffee className="w-4 h-4" />,
     },
     {
-      date: "May 22 • 10:00 AM",
-      title: "Final Submissions",
-      description: "Submit your projects for judging by the deadline.",
-      icon: <CalendarClock className="w-4 h-4" />,
+      date: "May 10 • 8:00 AM",
+      title: "Breakfast",
+      description: "Complimentary breakfast will be provided to all participants.",
+      icon: <Utensils className="w-4 h-4" />,
     },
     {
-      date: "May 22 • 2:00 PM",
+      date: "May 10 • 1:00 PM",
+      title: "Lunch",
+      description: "Complimentary lunch will be provided to all participants.",
+      icon: <Utensils className="w-4 h-4" />,
+    },
+    {
+      date: "May 10 • 10:00 AM",
       title: "Project Presentations",
-      description: "Present your projects to judges and other participants.",
+      description: "Teams present their projects to the judges and fellow participants.",
       icon: <CalendarClock className="w-4 h-4" />,
     },
     {
-      date: "May 22 • 5:00 PM",
-      title: "Awards Ceremony",
-      description: "Announcement of winners and prize distribution.",
+      date: "May 10 • 3:00 PM",
+      title: "Prize Distribution",
+      description: "Announcement of winners and distribution of prizes.",
       icon: <CalendarClock className="w-4 h-4" />,
-    },
+    }
   ];
 
   return (
-    <section id="timeline" className="py-20 md:py-32 relative overflow-hidden bg-gradient-to-b from-background to-hackathon-purple/5">
+    <section id="timeline" className="py-24 md:py-36 relative overflow-hidden bg-gradient-to-b from-background to-hackathon-purple/5">
       <div className="absolute inset-0 bg-[url(/images/bg-pattern.svg)] bg-no-repeat bg-cover opacity-10"></div>
       
       <div className="container relative">
-        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center px-4 py-1 rounded-full border border-hackathon-cyan/30 bg-hackathon-cyan/10 text-hackathon-cyan text-sm font-medium mb-6">
+        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-20">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="inline-flex items-center px-4 py-1 rounded-full border border-hackathon-cyan/30 bg-hackathon-cyan/10 text-hackathon-cyan text-sm font-medium mb-6"
+          >
             Event Schedule
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-heading">
+          </motion.div>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="text-4xl md:text-5xl font-bold mb-8 gradient-heading"
+          >
             Hackathon Timeline
-          </h2>
-          <p className="text-white/70 text-lg">
-            Mark your calendars for 48 hours of coding, learning, and innovation. Here's what to expect during the event.
-          </p>
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-white/80 text-lg md:text-xl leading-relaxed"
+          >
+            Join us for an intense 24-hour coding challenge. Food and refreshments will be provided throughout the event.
+            Additional food stalls will be available nearby at minimal rates.
+          </motion.p>
         </div>
 
         <div className="max-w-3xl mx-auto relative mt-20">
@@ -91,7 +115,7 @@ export function TimelineSection() {
                         {event.icon}
                       </div>
                     </div>
-                    <div className="inline-flex items-center px-3 py-1 rounded-full border border-hackathon, border-hackathon-purple/30 bg-hackathon-purple/10 text-hackathon-purple text-sm font-medium">
+                    <div className="inline-flex items-center px-3 py-1 rounded-full border border-hackathon-purple/30 bg-hackathon-purple/10 text-hackathon-purple text-sm font-medium">
                       <Clock className="w-3 h-3 mr-1.5" />
                       {event.date}
                     </div>
