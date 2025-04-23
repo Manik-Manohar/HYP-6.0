@@ -172,7 +172,6 @@ export function ChallengesSection() {
 >
   Download Template
 </a>
-
             </div>
           </div>
         </motion.div>
