@@ -79,7 +79,7 @@ export function Footer() {
                 <span>HITAM (Hyderabad Institute of Technology and Management)</span>
               </li>
               <li>
-              <span>Made with ❤️ by Mahesh Pandey</span>
+              <span>Assembled with ❤️ by HHC Team🤖☠️</span>
               </li>
             </ul>
           </div>
