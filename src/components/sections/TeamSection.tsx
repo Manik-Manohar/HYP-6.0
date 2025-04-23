@@ -69,7 +69,7 @@ export function TeamSection() {
       delay: 0,
     },
     {
-      name: "Tej Reddy",
+      name: "Tej Reddy M",
       role: "Tech Lead",
       image: "https://media.licdn.com/dms/image/v2/D5603AQGjWRVfbxIjgQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730372469496?e=1750896000&v=beta&t=KUiF7CExwa0oTM9lgI1fSqr0ubcyjEWIwwnw3M6-Vx0",
       fallbackImage: "https://ui-avatars.com/api/?name=Tej+Reddy&background=06B6D4&color=fff&size=200",
