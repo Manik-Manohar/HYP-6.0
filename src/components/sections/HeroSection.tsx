@@ -77,7 +77,7 @@ export function HeroSection() {
               </h3>
               <div className="flex items-center gap-4 glass rounded-xl p-6">
                 <img 
-                  src="dist/images/logos/UN-Blue-1000.png" 
+                  src="public/images/logos/UN-Blue-1000.png" 
                   alt="UNSTOP" 
                   className="h-16 w-auto object-contain"
                 />

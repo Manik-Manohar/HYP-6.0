@@ -166,7 +166,7 @@ export function ChallengesSection() {
                 </div>
               </div>
               <a 
-                href="dist/ppt/presentation-template.pptx" 
+                href="public/ppt/presentation-template.pptx" 
                 download
                 className="px-4 py-2 rounded-lg bg-hackathon-pink/20 hover:bg-hackathon-pink/30 text-hackathon-pink text-sm font-medium transition-colors"
               >
