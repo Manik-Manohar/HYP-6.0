@@ -56,7 +56,7 @@ export function RegisterSection() {
           >
             <div className="flex items-center gap-2 text-hackathon-yellow mb-4">
               <AlertCircle className="w-5 h-5" />
-              <h3 className="text-lg font-semibold">Registration Deadline: May 3rd, 2025</h3>
+              <h3 className="text-lg font-semibold">Registration Deadline: HITAMights - 29 April, 2025 | Others - 1 May, 2025</h3>
             </div>
             <ul className="text-left space-y-2 text-white/70">
               <li>• All team members must be from the same college</li>

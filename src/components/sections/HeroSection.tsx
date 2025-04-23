@@ -26,7 +26,7 @@ export function HeroSection() {
             </div>
             <div className="inline-flex items-center px-3 py-1 rounded-full border border-hackathon-yellow/30 bg-hackathon-yellow/10 text-hackathon-yellow text-sm font-medium animate-fade-down">
               <AlertCircle className="w-4 h-4 mr-2" />
-              <span>Register by May 3rd</span>
+              <span>Register by: HITAMights - Apr 29 | Others - May 1</span>
             </div>
           </div>
           
@@ -64,6 +64,27 @@ export function HeroSection() {
                 <div className="text-left">
                   <h4 className="text-white font-semibold">HITAM Hackathon Club</h4>
                   <p className="text-white/70 text-sm">Fostering Innovation Through Code</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Powered By */}
+          <div className="mt-16 w-full">
+            <div className="flex flex-col items-center gap-4">
+              <h3 className="text-center text-white/70 text-sm uppercase tracking-wider font-medium">
+              Powered By
+              </h3>
+              <div className="flex items-center gap-4 glass rounded-xl p-6">
+                <img 
+                  src="dist/images/logos/UN-Blue-1000.png" 
+                  alt="UNSTOP" 
+                  className="h-16 w-auto object-contain"
+                />
+                <div className="h-12 w-px bg-white/10"></div>
+                <div className="text-left">
+                  <h4 className="text-white font-semibold">UNSTOP</h4>
+                  <p className="text-white/70 text-sm">Connecting talent, colleges, & recruiters!</p>
                 </div>
               </div>
             </div>

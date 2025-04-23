@@ -7,39 +7,32 @@ export function ChallengesSection() {
 
   const challenges = [
     {
-      title: "Agriculture",
-      description: "Problem Statement 1: India's 120 million smallholder farmers often struggle with limited access to formal credit systems, particularly those in remote areas. This severely impacts their ability to invest in quality seeds, fertilizers, and essential equipment, hindering agricultural productivity and sustainability. Design a tech-based, scalable solution that connects these farmers with financial institutions in a reliable, accessible, and transparent manner to empower their growth.\n\nProblem Statement 2: Rural and semi-rural farmers frequently lack access to localized, real-time information essential for smart farming. From region-specific crop advisories and weather forecasts to market prices and pest alerts, the absence of timely and accessible data creates uncertainty. Develop a solution that delivers hyperlocal, real-time agricultural knowledge in an easily digestible form to help smallholder farmers make informed decisions and improve their yield sustainably.",
+      title: "Future of Society",
+      description: "EdTech - Innovations in education and learning\nTransform the way we learn and teach through technology, making education more accessible, engaging, and effective for all.\n\nHealthTech / MedTech - Solutions for healthcare and wellness\nRevolutionize healthcare delivery and patient care through innovative digital solutions and smart medical technologies.\n\nAgriTech / FoodTech - Smart agriculture and food innovation\nModernize farming practices and food systems using technology to ensure sustainable food production and distribution.\n\nGovTech - Better governance and public services\nEnhance public service delivery and government operations through digital transformation and smart solutions.\n\nLegalTech - Simplifying legal systems and access to justice\nMake legal services more accessible and efficient through technology-driven solutions and innovations.",
       icon: <FileCode className="w-6 h-6 text-hackathon-pink" />,
       color: "from-hackathon-pink/20 to-hackathon-pink/5",
       delay: 0,
     },
     {
-      title: "Education",
-      description: "Problem Statement 1: Overcrowded classrooms, outdated teaching methods, and limited resources make it difficult for teachers in India's low-income and government schools to deliver quality education. These challenges often result in disengaged learners and high dropout rates. Create an inclusive, teacher-friendly solution that supports personalized learning, simplifies teaching processes, and fosters better student engagement without adding extra burden on educators.\n\nProblem Statement 2: Underprivileged students frequently lack academic support outside school hours due to financial constraints, illiterate guardians, and a lack of structured environments for studying. This gap widens learning disparities and impacts long-term academic outcomes. Build a tech-inclusive, community-oriented solution that provides affordable and accessible after-school learning support to bridge this educational divide.",
+      title: "Smart Business & Finance",
+      description: "FinTech - Banking, payments, and financial inclusion\nRevolutionize financial services through digital innovation, making banking and payments more accessible and efficient for everyone.\n\nInsurTech - Tech for insurance and risk management\nTransform the insurance industry with smart solutions that simplify coverage, automate claims, and enhance risk assessment.\n\nRetailTech - Future of shopping and e-commerce\nReshape retail experiences through digital transformation, connecting businesses with customers in innovative ways.\n\nAdTech / MarTech - Marketing and customer experience solutions\nCreate cutting-edge marketing technologies that deliver personalized experiences and drive customer engagement.\n\nHRTech - Hiring, upskilling, and employee engagement\nModernize human resources with tech solutions that streamline recruitment, enhance training, and improve workplace satisfaction.",
       icon: <Lightbulb className="w-6 h-6 text-hackathon-yellow" />,
       color: "from-hackathon-yellow/20 to-hackathon-yellow/5",
       delay: 0.1,
     },
     {
-      title: "Healthcare",
-      description: "Problem Statement 1: In many rural and underserved communities, people lack awareness of healthcare programs and face long delays in accessing medical help. These issues result in worsening health conditions and higher treatment costs. Propose a solution that ensures early diagnosis, awareness of healthcare schemes, and better connectivity between patients and medical professionals.\n\nProblem Statement 2: Frontline health workers are the backbone of last-mile healthcare delivery, yet they often operate with minimal tools, poor digital support, and limited training. Build a tech-enabled platform that enhances their capacity to deliver effective, informed, and personalized care, even in low-resource environments, thereby improving health outcomes at scale.",
+      title: "Sustainable Planet",
+      description: "CleanTech / GreenTech - Renewable energy and eco-solutions\nDrive environmental sustainability through innovative clean technologies and renewable energy solutions that reduce carbon footprint and promote eco-friendly practices.\n\nAgriTech - Sustainable farming and agri-automation\nTransform agriculture with smart technologies that enhance productivity while preserving natural resources and promoting sustainable farming practices.\n\nMobilityTech / AutoTech - Smart transport and EV innovations\nRevolutionize transportation through electric vehicles and smart mobility solutions that reduce emissions and improve urban connectivity.\n\nPropTech - Smart buildings and sustainable urban development\nCreate intelligent building solutions and urban development technologies that promote sustainability and enhance quality of life in cities.",
       icon: <Zap className="w-6 h-6 text-hackathon-green" />,
       color: "from-hackathon-green/20 to-hackathon-green/5",
       delay: 0.2,
     },
     {
-      title: "Environment",
-      description: "Problem Statement 1: Landfills are major contributors to methane emissions due to unsegregated organic waste decomposition. Poor waste management practices further compound this issue, contributing to climate change and hazardous living conditions. Innovate a smart waste management system that facilitates segregation, minimizes landfill dependency, and reduces methane emissions at the source.\n\nProblem Statement 2: Rampant water pollution caused by industrial waste, domestic runoff, and chemical discharge endangers aquatic life and human health. Design an integrated system for real-time monitoring, community-based alerts, or industrial compliance tracking that helps manage and prevent pollution, thus preserving clean water for present and future use.",
+      title: "Deep Tech & Innovation",
+      description: "BioTech - Genetics, pharmaceuticals, and life sciences\nAdvance healthcare and scientific research through innovative biotechnology solutions, from genetic engineering to drug discovery and personalized medicine.\n\nSpaceTech - Space exploration and satellite tech\nPush the boundaries of space technology with innovations in satellite communications, space exploration, and earth observation systems.\n\nCyberTech - Cybersecurity and digital safety\nProtect digital assets and privacy through advanced cybersecurity solutions, ensuring safe and secure digital environments.\n\nGameTech - Gaming, AR/VR, and immersive tech\nCreate immersive experiences through cutting-edge gaming technology, augmented reality, and virtual reality innovations.\n\nFashionTech - Wearables and smart fashion\nRevolutionize the fashion industry with smart textiles, wearable technology, and sustainable fashion solutions.\n\nTravelTech - Tech-driven tourism and logistics\nTransform travel and tourism through innovative technology solutions that enhance experiences and streamline logistics.",
       icon: <Layers className="w-6 h-6 text-hackathon-purple" />,
       color: "from-hackathon-purple/20 to-hackathon-purple/5",
       delay: 0.3,
-    },
-    {
-      title: "Open Innovation",
-      description: "This category is open for teams who want to tackle problems beyond the listed themes. It could be anything from financial technology, urban mobility, AI in governance, social inclusion, cybersecurity, to smart infrastructure. The goal is to encourage bold, original ideas that address real-world issues with scalable, tech-driven solutions.",
-      icon: <Sparkles className="w-6 h-6 text-hackathon-blue" />,
-      color: "from-hackathon-blue/20 to-hackathon-blue/5",
-      delay: 0.1,
     },
   ];
 
@@ -146,6 +139,41 @@ export function ChallengesSection() {
           >
             Accept the Challenge
           </a>
+        </motion.div>
+
+        {/* New Resources Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="mt-16 glass rounded-xl p-8 max-w-4xl mx-auto"
+        >
+          <div className="flex items-center justify-between mb-6">
+            <h3 className="text-2xl font-bold text-white">
+              Challenge Resources
+            </h3>
+          </div>
+          <div className="space-y-6">
+            <div className="flex items-center justify-between p-4 rounded-lg bg-white/5 hover:bg-white/10 transition-colors">
+              <div className="flex items-center gap-3">
+                <svg className="w-6 h-6 text-hackathon-pink" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <div>
+                  <h4 className="text-white font-medium">Project Presentation Template</h4>
+                  <p className="text-white/70 text-sm">Download the template for your project presentation</p>
+                </div>
+              </div>
+              <a 
+                href="dist/ppt/presentation-template.pptx" 
+                download
+                className="px-4 py-2 rounded-lg bg-hackathon-pink/20 hover:bg-hackathon-pink/30 text-hackathon-pink text-sm font-medium transition-colors"
+              >
+                Download Template
+              </a>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

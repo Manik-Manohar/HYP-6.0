@@ -76,7 +76,7 @@ export function TeamSection() {
       bio: "Leading technical initiatives and development.",
       socials: {
         linkedin: "https://www.linkedin.com/in/tej-reddy-m/",
-        github: "#",
+        github: "https://github.com/tejreddym",
         instagram: "https://www.instagram.com/incognitor_official/"
       },
       delay: 0.1,
