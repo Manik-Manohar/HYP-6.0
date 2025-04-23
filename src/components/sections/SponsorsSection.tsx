@@ -15,7 +15,7 @@ export function SponsorsSection() {
       sponsors: [
         { name: "GDG HITAM", logo: "/images/logos/gdg_logo.png" },
         { name: "IUCEE HITAM", logo: "/images/logos/iuceee_logo.png" },
-        { name: "UNSTOP", logo: "public/images/logos/Unstop-Logo-Blue-Medium.png" },
+        { name: "UNSTOP", logo: "/images/logos/Unstop-Logo-Blue-Medium.png" },
       ],
       delay: 0.1,
     },
