@@ -87,6 +87,30 @@ export function HeroSection() {
                   <p className="text-white/70 text-sm">Connecting talent, colleges, & recruiters!</p>
                 </div>
               </div>
+              <div className="flex items-center gap-4 glass rounded-xl p-6">
+                <img 
+                  src="/images/logos/Untitled design-4.png" 
+                  alt="UNSTOP" 
+                  className="h-16 w-auto object-contain"
+                />
+                <div className="h-12 w-px bg-white/10"></div>
+                <div className="text-left">
+                  <h4 className="text-white font-semibold">Do Little Technologies</h4>
+                  <p className="text-white/70 text-sm">Pvt Ltd                                    </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4 glass rounded-xl p-6">
+                <img 
+                  src="/images/logos/Untitled design-5.png" 
+                  alt="ST" 
+                  className="h-16 w-auto object-contain"
+                />
+                <div className="h-12 w-px bg-white/10"></div>
+                <div className="text-left">
+                  <h4 className="text-white font-semibold">STUDY CONNECT</h4>
+                  <p className="text-white/70 text-sm">Global Study Connect </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
